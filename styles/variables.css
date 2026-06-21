@@ -4,12 +4,12 @@
 */
 :root {
     --font-family-site: 'IBM Plex mono';
-    --main-background: url("/images/cover-image-dark.png");
-    --accent-color: #FF0070;
+    --main-background-auto: url("/images/cover-image-dark.png");
+    --accent-color-auto: #FF0070;
     --main-text: 18px;
     --text-color-dark: #000028;
     --text-weight: bold;
-    --violet: #DB00FF;
-    --pink: #F1B2CE;
+    --violet-auto: #DB00FF;
+    --pink-auto: #F1B2CE;
     --text-weight-normal: normal;
 }
