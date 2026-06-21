@@ -3,6 +3,7 @@
   и их переопределение под различные устройства
 */
 :root {
+    --font-family-site: 'IBM Plex mono';
     --main-background: url("/images/cover-image-dark.png");
     --accent-color: #FF0070;
     --main-text: 18px;
