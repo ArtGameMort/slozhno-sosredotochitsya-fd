@@ -83,11 +83,12 @@
     font-size: var(--main-text);
 }
 
-.header__theme-menu-item:hover {
+.header__theme-menu-button:hover {
     border: 1px solid var(--border-hover);
 }
 
-.header__theme-menu-item:focus {
+.header__theme-menu-button:focus {
+    outline: none;
     border-bottom: 1px solid var(--border-hover);
 }
 
