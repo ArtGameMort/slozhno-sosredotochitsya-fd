@@ -3,10 +3,39 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-
 :root.theme-light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+    --font-family-site: 'IBM Plex mono';
+    --main-background-auto: url("/images/cover-image-light.png");
+    --accent-color-auto: #FF8DCB;
+    --violet-auto: #FFC2E6;
+    --pink-auto: #353430;
+    --text-color-dark: #353430;
+    --head-text-auto: #353430;
+    --border-hover: #32312D;
+}
+
+.theme-light .rec {
+    display: none;
+}
+
+.theme-light .decorated-zone::before {
+    border-top: 1px solid var(--text-color-dark);
+    border-right: 1px solid var(--text-color-dark);
+}
+
+.theme-light .decorated-zone::after {
+    border-bottom: 1px solid var(--text-color-dark);
+    border-left: 1px solid var(--text-color-dark);
+}
+
+.theme-light .header__theme-menu-button_active{
+    border: 1px solid var(--border-hover);
+}
+
+.theme-light .header__theme-menu-button{
+    color: var(--text-color-dark);
 }
