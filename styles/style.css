@@ -1,7 +1,7 @@
 .page {
     background-image: var(--main-background-auto);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: auto 100%;
     background-position: center;
     background-attachment: fixed;
     padding: 0 20px;
