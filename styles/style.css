@@ -156,12 +156,12 @@
     inline-size: 315px;
 }
 
-.card{
+.card {
     display: grid;
     gap: 10px;
 }
 
-.card-text{
+.card-text {
     color: var(--pink-auto);
     font-size: var(--main-text);
 }
@@ -432,7 +432,6 @@
     .street {
         grid-column: 2 / 4;
     }
-
 
     .footer {
         height: 100vh;
