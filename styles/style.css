@@ -425,10 +425,6 @@
         grid-row-end: 5;
     }
 
-    .books {
-
-    }
-
     .street {
         grid-column: 2 / 4;
     }
