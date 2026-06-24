@@ -489,6 +489,11 @@
         max-width: 100%;
     }
 
+    .head-card-text {
+        width: 100%;
+        inline-size: auto;
+    }
+
     .header {
         grid-template-rows: auto 1fr auto;
         min-height: auto;
