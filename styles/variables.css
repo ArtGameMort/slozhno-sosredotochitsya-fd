@@ -4,7 +4,7 @@
 */
 :root {
     --font-family-site: 'IBM Plex mono';
-    --main-background-auto: url("/images/cover-image-dark.png");
+    --main-background-auto: url("../images/cover-image-dark.png");
     --accent-color-auto: #FF0070;
     --head-text-auto: #FF0070;
     --main-text: 18px;

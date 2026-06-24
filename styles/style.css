@@ -142,27 +142,35 @@
 
 .text-focus {
     margin-top: 68px;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
+}
+
+.section-content {
+    display: grid;
     gap: 20px;
 }
 
-.head-text {
+.head-card-text {
     color: var(--head-text-auto);
-    padding-right: 0;
     font-size: var(--main-text);
+    inline-size: 315px;
 }
 
-.explanation {
-    grid-column-start: 2;
-    grid-column-end: 2;
+.card{
     display: grid;
     gap: 10px;
 }
 
-.explanation-text {
+.card-text{
     color: var(--pink-auto);
     font-size: var(--main-text);
+}
+
+.explanation {
+    grid-column: 2;
+}
+
+.explanation-text {
     inline-size: 649px;
 }
 
@@ -182,70 +190,34 @@
 
 .text-сoncentrat {
     margin-top: 72px;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
     align-items: start;
 }
 
 .concent-text {
-    font-size: var(--main-text);
-    color: var(--head-text-auto);
-    padding-right: 0;
     grid-column: 1 / -1;
-    inline-size: 315px;
-}
-
-.сoncentration {
-    display: grid;
-    gap: 20px;
-}
-
-.сoncentration-text {
-    color: var(--pink-auto);
-    font-size: var(--main-text);
 }
 
 .text-advice {
     margin-top: 80px;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-}
-
-.adv-text {
-    font-size: var(--main-text);
-    color: var(--head-text-auto);
-    padding-right: 0;
-    inline-size: 315px;
 }
 
 .advising {
-    grid-column-start: 2;
-    grid-column-end: 2;
-    display: grid;
-    gap: 10px;
+    grid-column: 2;
 }
 
 .advice-text {
-    color: var(--pink-auto);
-    font-size: var(--main-text);
     inline-size: 649px;
 }
 
 .decor-notitle {
-    background-color: var(--accent-color-auto);
-    color: var(--text-color-dark);
-    font-size: var(--main-text);
     font-weight: var(--text-weight-normal);
 }
 
 .text-pictures {
     margin-top: 80px;
-    display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    gap: 20px;
 }
 
 .text-head-picture {

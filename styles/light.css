@@ -9,7 +9,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
     --font-family-site: 'IBM Plex mono';
-    --main-background-auto: url("/images/cover-image-light.png");
+    --main-background-auto: url("../images/cover-image-light.png");
     --accent-color-auto: #FF8DCB;
     --violet-auto: #FFC2E6;
     --pink-auto: #353430;
