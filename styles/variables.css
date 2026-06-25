@@ -5,13 +5,14 @@
 :root {
     --font-family-site: 'IBM Plex mono';
     --main-background-auto: url("../images/cover-image-dark.png");
+    --bg-color: #000028;
     --accent-color-auto: #FF0070;
     --head-text-auto: #FF0070;
     --main-text: 18px;
     --text-color-dark: #000028;
     --text-weight: bold;
-    --violet-auto: #DB00FF;
-    --pink-auto: #F1B2CE;
+    --header-auto: #DB00FF;
+    --card-text-auto: #F1B2CE;
     --text-weight-normal: normal;
-    --border-hover: #FF0070;
+    --border-hover: rgba(255, 0, 112, 0.4);
 }
