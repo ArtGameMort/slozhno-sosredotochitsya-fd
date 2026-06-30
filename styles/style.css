@@ -27,6 +27,7 @@
     right: 48px;
     color: var(--accent-color-auto);
     font-size: var(--main-text);
+    display: var(--display);
 }
 
 .rec::after {
@@ -40,6 +41,7 @@
     border-radius: 50%;
     border: 1px solid var(--text-color-dark);
     box-shadow: 0 0 4px 2px var(--accent-color-auto);
+    display: var(--display);
 }
 
 .decorated-zone {
@@ -49,8 +51,8 @@
 .decorated-zone::before {
     content: "";
     position: absolute;
-    border-top: 1px solid var(--accent-color-auto);
-    border-right: 1px solid var(--accent-color-auto);
+    border-top: 1px solid var(--border-hover);
+    border-right: 1px solid var(--border-hover);
     top: 20px;
     right: 20px;
     width: 25px;
@@ -60,8 +62,8 @@
 .decorated-zone::after {
     content: "";
     position: absolute;
-    border-bottom: 1px solid var(--accent-color-auto);
-    border-left: 1px solid var(--accent-color-auto);
+    border-bottom: 1px solid var(--border-hover);
+    border-left: 1px solid var(--border-hover);
     bottom: 20px;
     left: 20px;
     width: 25px;
@@ -104,7 +106,7 @@
 }
 
 .header__theme-menu-button_active {
-    border: 1px solid var(--accent-color-auto);
+    border: 1px solid var(--border-hover);
     pointer-events: none;
 }
 
@@ -157,7 +159,8 @@
 .head-card-text {
     color: var(--head-text-auto);
     font-size: var(--main-text);
-    inline-size: 315px;
+    max-inline-size: 315px;
+    inline-size: 100%;
 }
 
 .card {
@@ -168,21 +171,12 @@
 .card-text {
     color: var(--card-text-auto);
     font-size: var(--main-text);
+    max-inline-size: 649px;
+    inline-size: 100%;
 }
 
-.text-focus .card-text,
-.text-advice .card-text {
-    inline-size: 649px;
-}
-
-.text-сoncentrate .card-text {
-    inline-size: auto;
-}
-
-.text-focus .card {
-    grid-column: 2;
-}
-
+/* Объединённые селекторы для карточек в .text-focus и .text-advice */
+.text-focus .card,
 .text-advice .card {
     grid-column: 2;
 }
@@ -278,13 +272,6 @@
 }
 
 @media (width <= 768px) and (width > 375px) {
-    .header,
-    .main,
-    .footer {
-        width: 100%;
-        max-width: 100%;
-    }
-
     .header {
         padding: 0;
         gap: 0;
@@ -306,20 +293,8 @@
         padding: 0 20px;
     }
 
-    .header__description {
-        width: 491px;
-    }
-
     .head-card-text {
-        inline-size: 236px;
-    }
-
-    .text-focus {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .text-advice {
-        grid-template-columns: repeat(2, 1fr);
+        max-inline-size: 236px;
     }
 
     .text-сoncentrate {
@@ -327,25 +302,7 @@
     }
 
     .concent-text {
-        grid-column: 1 / -1;
         inline-size: 236px;
-    }
-
-    .text-focus .card-text,
-    .text-advice .card-text,
-    .text-сoncentrate .card-text {
-        inline-size: auto !important;
-        width: 100% !important;
-        max-width: 100% !important;
-        box-sizing: border-box;
-    }
-
-    .text-focus .card {
-        grid-column: 2;
-    }
-
-    .text-advice .card {
-        grid-column: 2;
     }
 
     .sunset {
@@ -366,18 +323,22 @@
         width: 20px;
         height: 20px;
     }
+
     .decorated-zone::before {
         top: 15px;
         right: 15px;
     }
+
     .decorated-zone::after {
         bottom: 15px;
         left: 15px;
     }
+
     .rec {
         right: 38px;
         top: 15px;
     }
+
     .rec::after {
         width: 8px;
         height: 8px;
@@ -386,16 +347,9 @@
     }
 }
 
-@media (width = 375px) {
+@media (width <= 375px) {
     .page {
         padding: 0 10px;
-    }
-
-    .header,
-    .main,
-    .footer {
-        width: 100%;
-        max-width: 100%;
     }
 
     .head-card-text {
@@ -437,16 +391,13 @@
         padding: 0;
     }
 
-    .text-focus,
-    .text-сoncentrate,
-    .text-advice {
+    .section-content {
         grid-template-columns: 1fr;
         gap: 16px;
         margin-top: 30px;
     }
 
-    .head-card-text,
-    .concent-text {
+    .head-card-text {
         grid-column: 1 / -1;
         width: 100%;
         font-size: var(--main-text);
@@ -457,54 +408,23 @@
         grid-column: 1 / -1;
     }
 
-    .text-focus .card,
-    .text-advice .card {
-        grid-column: 1 / -1;
-    }
-
-    .card-text {
-        width: 100%;
-        inline-size: auto !important;
-    }
-
-    .decor-notitle {
-        font-size: var(--main-text);
-    }
-
     .text-pictures {
         grid-template-columns: 1fr;
         gap: 10px;
         margin-top: 30px;
         padding: 0;
+        grid-column: 1 / -1;
+        grid-row: auto;
     }
 
     .text-head-picture {
         grid-column: 1 / -1;
     }
 
-    .text-pictures img {
-        width: 100% !important;
-        height: auto !important;
-        object-fit: cover;
-        display: block;
-        margin: 0;
-        padding: 0;
-    }
-
-    .sunset,
-    .ice-cream,
-    .tape,
-    .books,
-    .street {
-        grid-column: 1 / -1;
-        grid-row: auto;
-    }
-
     .footer {
         margin-top: 30px;
         height: 668px;
         width: 100%;
-        max-width: 100%;
     }
 
     .footer-text {
@@ -517,54 +437,26 @@
         width: 16px;
         height: 16px;
     }
+
     .decorated-zone::before {
         top: 10px;
         right: 10px;
     }
+
     .decorated-zone::after {
         bottom: 10px;
         left: 10px;
     }
+
     .rec {
         right: 28px;
         top: 10px;
     }
+
     .rec::after {
         width: 7px;
         height: 7px;
         right: -12px;
         top: 7px;
-    }
-    .header__theme-menu-button {
-        width: 60px;
-        height: 24px;
-    }
-}
-
-@media (prefers-color-scheme: light) {
-    .theme-light .rec {
-        display: none;
-    }
-
-    .theme-light .page {
-        background-color: var(--bg-color);
-    }
-
-    .theme-light .decorated-zone::before {
-        border-top: 1px solid var(--text-color-dark);
-        border-right: 1px solid var(--text-color-dark);
-    }
-
-    .theme-light .decorated-zone::after {
-        border-bottom: 1px solid var(--text-color-dark);
-        border-left: 1px solid var(--text-color-dark);
-    }
-
-    .theme-light .header__theme-menu-button_active {
-        border: 1px solid var(--border-hover);
-    }
-
-    .theme-light .header__theme-menu-button {
-        color: var(--text-color-dark);
     }
 }
