@@ -11,7 +11,6 @@
 }
 
 .header {
-    height: 100vh;
     min-height: 768px;
     width: 100%;
     max-width: 1024px;
@@ -71,7 +70,7 @@
 }
 
 .header__theme-menu {
-    padding-top: 20px;
+    padding-top: 17px;
 }
 
 .header__theme-menu-list {
@@ -126,8 +125,8 @@
     align-self: start;
     max-width: 491px;
     width: 100%;
-    margin-right: 16px;
-    margin-top: 114px;
+    margin-right: 19px;
+    margin-top: 51px;
 }
 
 .title-decor {
@@ -146,11 +145,6 @@
     padding-left: 20px;
 }
 
-.text-focus {
-    margin-top: 68px;
-    grid-template-columns: repeat(2, 1fr);
-}
-
 .section-content {
     display: grid;
     gap: 20px;
@@ -163,19 +157,23 @@
     inline-size: 100%;
 }
 
+.text-focus{
+    margin-top: 68px;
+}
+
 .card {
     display: grid;
     gap: 10px;
+    max-inline-size: 649px;
+    inline-size: 100%;
 }
 
 .card-text {
     color: var(--card-text-auto);
     font-size: var(--main-text);
-    max-inline-size: 649px;
-    inline-size: 100%;
+    line-height: 23.4px;
 }
 
-/* Объединённые селекторы для карточек в .text-focus и .text-advice */
 .text-focus .card,
 .text-advice .card {
     grid-column: 2;
@@ -195,7 +193,7 @@
     border: 1px solid var(--border-hover);
 }
 
-.text-сoncentrate {
+.text-concentration {
     margin-top: 72px;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
@@ -207,7 +205,10 @@
 
 .text-advice {
     margin-top: 80px;
-    grid-template-columns: repeat(2, 1fr);
+}
+
+.five_advice {
+    margin-bottom: 12px
 }
 
 .decor-notitle {
@@ -216,7 +217,6 @@
 
 .text-pictures {
     margin-top: 80px;
-    grid-template-columns: repeat(3, 1fr);
 }
 
 .text-head-picture {
@@ -253,7 +253,6 @@
 }
 
 .footer {
-    height: 100vh;
     min-height: 768px;
     width: 100%;
     max-width: 1024px;
@@ -268,82 +267,107 @@
     color: var(--header-auto);
     text-shadow: 2px 2px 0 var(--accent-color-auto);
     font-weight: var(--text-weight);
-    line-height: 82.5%;
+    line-height: 82.5px;
 }
 
 @media (width <= 768px) and (width > 375px) {
-    .header {
+
+    .page {
         padding: 0;
-        gap: 0;
     }
 
-    .header-text {
-        text-align: left;
+    .rec {
+        top: 21px;
+        right: 49px;
     }
 
-    .header__theme-menu {
-        padding-top: 145px;
-        justify-self: end;
-        display: grid;
-        gap: 10px;
+    .rec::after {
+        width: 9px;
+        height: 9px;
     }
 
-    .header__theme-menu-list {
-        grid-auto-flow: row;
-        padding: 0 20px;
+    .decorated-zone::before {
+        top: 20px;
+        right: 20px;
     }
 
-    .head-card-text {
-        max-inline-size: 236px;
-    }
-
-    .text-сoncentrate {
-        grid-template-columns: 1fr;
-    }
-
-    .concent-text {
-        inline-size: 236px;
-    }
-
-    .sunset {
-        grid-row-start: 2;
-        grid-row-end: 2;
-    }
-
-    .tape {
-        grid-column: 1 / 2;
-    }
-
-    .footer-text {
-        text-align: center;
+    .decorated-zone::after {
+        bottom: -44px;
+        left: 20px;
     }
 
     .decorated-zone::before,
     .decorated-zone::after {
-        width: 20px;
-        height: 20px;
+        width: 25px;
+        height: 25px;
     }
 
-    .decorated-zone::before {
-        top: 15px;
-        right: 15px;
+    .header__theme-menu {
+        padding-top: 188px;
+        justify-self: end;
+        padding-right: 20px;
+        display: grid;
     }
 
-    .decorated-zone::after {
-        bottom: 15px;
-        left: 15px;
+    .header__theme-menu-list {
+        grid-auto-flow: row;
     }
 
-    .rec {
-        right: 38px;
-        top: 15px;
+    .header {
+        min-height: auto;
+        height: auto;
+        gap: 51px;
     }
 
-    .rec::after {
-        width: 8px;
-        height: 8px;
-        right: -18px;
-        top: 6px;
+    .header-text {
+        justify-self: start;
+        margin-top: 67px;
+    }
+
+    .header__description {
+        max-inline-size: 364px;
+        inline-size: 100%;
+    }
+
+    .head-card-text {
+        max-inline-size: 236px;
+        inline-size: 100%;
+    }
+
+    .text-focus {
+        padding-top: 56px;
+    }
+
+    .card {
+        gap: 10px;
+    }
+
+    .text-focus .card,
+    .text-advice .card {
+        max-inline-size: 472px;
+        inline-size: 100%;
+    }
+
+    .text-concentration {
+        margin-top: 80px;
+        grid-template-columns: 1fr;
+    }
+
+    .concentrate {
+        max-inline-size: 728px;
+        inline-size: 100%;
+    }
+
+    .text-advice {
+        margin-top: 83px;
+    }
+
+    .text-pictures {
+        margin-top: 79px;
+    }
+
+    .footer {
+        min-height: 1024px;
     }
 }
 
@@ -397,6 +421,11 @@
         margin-top: 30px;
     }
 
+    .text-focus .card,
+    .text-advice .card {
+        grid-column: 1;
+    }
+
     .head-card-text {
         grid-column: 1 / -1;
         width: 100%;
@@ -413,12 +442,15 @@
         gap: 10px;
         margin-top: 30px;
         padding: 0;
-        grid-column: 1 / -1;
-        grid-row: auto;
     }
 
     .text-head-picture {
         grid-column: 1 / -1;
+    }
+
+    .text-pictures img {
+        grid-column: auto;
+        grid-row: auto;
     }
 
     .footer {
