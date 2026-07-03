@@ -194,7 +194,7 @@
 }
 
 .text-concentration {
-    margin-top: 72px;
+    margin-top: 80px;
     grid-template-columns: repeat(3, 1fr);
     align-items: start;
 }
