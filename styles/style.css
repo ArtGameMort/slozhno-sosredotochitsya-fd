@@ -331,7 +331,7 @@
     }
 
     .text-focus {
-        padding-top: 60px;
+        padding-top: 62px;
     }
 
     .card {
@@ -345,6 +345,7 @@
     }
 
     .text-concentration {
+        margin-top: 80px;
         grid-template-columns: 1fr;
     }
 
@@ -367,9 +368,6 @@
 }
 
 @media (width <= 375px) {
-    .page {
-        padding: 0 10px;
-    }
 
     .head-card-text {
         width: 100%;
