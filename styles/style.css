@@ -272,10 +272,6 @@
 
 @media (width <= 768px) and (width > 375px) {
 
-    .page {
-        padding: 0;
-    }
-
     .rec {
         top: 21px;
         right: 49px;
@@ -334,10 +330,6 @@
         inline-size: 100%;
     }
 
-    .text-focus {
-        padding-top: 56px;
-    }
-
     .card {
         gap: 10px;
     }
@@ -349,7 +341,6 @@
     }
 
     .text-concentration {
-        margin-top: 80px;
         grid-template-columns: 1fr;
     }
 
@@ -359,11 +350,11 @@
     }
 
     .text-advice {
-        margin-top: 83px;
+        margin-top: 80px;
     }
 
     .text-pictures {
-        margin-top: 79px;
+        margin-top: 80px;
     }
 
     .footer {
