@@ -330,6 +330,10 @@
         inline-size: 100%;
     }
 
+    .text-focus {
+        padding-top: 60px;
+    }
+
     .card {
         gap: 10px;
     }
