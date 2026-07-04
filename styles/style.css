@@ -287,11 +287,6 @@
         right: 20px;
     }
 
-    .decorated-zone::after {
-        bottom: -44px;
-        left: 20px;
-    }
-
     .decorated-zone::before,
     .decorated-zone::after {
         width: 25px;
