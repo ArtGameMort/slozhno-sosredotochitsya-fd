@@ -379,12 +379,12 @@
 
     .header-text {
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
-        justify-self: center;
+        padding-left: 10px;
     }
 
     .header__description {
-        margin-right: 0;
-        padding-top: 0;
+        padding: 0 10px;
+        margin: 0;
         justify-self: center;
     }
 
@@ -401,7 +401,8 @@
     }
 
     .main {
-        padding: 0;
+        padding: 40px 10px 0 10px;
+
     }
 
     .section-content {
@@ -465,7 +466,7 @@
     }
 
     .decorated-zone::after {
-        bottom: -20px;
+        bottom: -50px;
         left: 10px;
     }
 
