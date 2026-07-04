@@ -287,6 +287,11 @@
         right: 20px;
     }
 
+    .decorated-zone::after {
+        bottom: -44px;
+        left: 20px;
+    }
+
     .decorated-zone::before,
     .decorated-zone::after {
         width: 25px;
@@ -364,11 +369,6 @@
 
 @media (width <= 375px) {
 
-    .head-card-text {
-        width: 100%;
-        inline-size: auto;
-    }
-
     .header {
         grid-template-rows: auto 1fr auto;
         min-height: auto;
@@ -389,7 +389,8 @@
     }
 
     .header__theme-menu {
-        padding-top: 39px;
+        padding-top: 75px;
+        padding-right: 10px;
         justify-self: end;
         display: grid;
         gap: 10px;
@@ -454,8 +455,8 @@
 
     .decorated-zone::before,
     .decorated-zone::after {
-        width: 16px;
-        height: 16px;
+        width: 25px;
+        height: 25px;
     }
 
     .decorated-zone::before {
@@ -464,7 +465,7 @@
     }
 
     .decorated-zone::after {
-        bottom: 10px;
+        bottom: -20px;
         left: 10px;
     }
 
