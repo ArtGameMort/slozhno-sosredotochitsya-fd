@@ -379,6 +379,7 @@
     .header-text {
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
         padding-left: 10px;
+        padding-top: 10px;
     }
 
     .header__description {
@@ -400,7 +401,7 @@
     }
 
     .main {
-        padding: 50px 10px 0 10px;
+        padding: 60px 10px 0 10px;
 
     }
 
@@ -465,7 +466,7 @@
     }
 
     .decorated-zone::after {
-        bottom: -50px;
+        bottom: -70px;
         left: 10px;
     }
 
