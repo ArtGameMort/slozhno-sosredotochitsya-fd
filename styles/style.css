@@ -411,6 +411,10 @@
         margin-top: 30px;
     }
 
+    .text-concentration {
+        padding-top: 15px;
+    }
+
     .text-focus .card,
     .text-advice .card {
         grid-column: 1;
