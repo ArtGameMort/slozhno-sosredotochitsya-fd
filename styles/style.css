@@ -450,8 +450,7 @@
 
     .footer {
         margin-top: 40px;
-        max-height: 668px;
-        height: 100%;
+        min-height: 668px;
     }
 
     .footer-text {
