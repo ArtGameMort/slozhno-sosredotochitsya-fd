@@ -371,7 +371,8 @@
 
     .header {
         grid-template-rows: auto 1fr auto;
-        min-height: 668px;
+        min-height: auto;
+        height: auto;
         gap: 56px;
     }
 
@@ -469,7 +470,7 @@
     }
 
     .decorated-zone::after {
-        bottom: -55px;
+        top: 633px;
         left: 10px;
     }
 
