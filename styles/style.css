@@ -412,7 +412,11 @@
     }
 
     .text-concentration {
-        padding-top: 15px;
+        padding-top: 20px;
+    }
+
+    .text-advice {
+        padding-top: 20px;
     }
 
     .text-focus .card,
