@@ -425,10 +425,8 @@
     }
 
     .head-card-text {
-        grid-column: 1 / -1;
-        width: 100%;
-        font-size: var(--main-text);
-        inline-size: auto;
+        max-inline-size: 355px;
+        inline-size: 100%;
     }
 
     .card {
