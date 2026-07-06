@@ -270,7 +270,11 @@
     line-height: 82.5px;
 }
 
-@media (width <= 768px) and (width > 375px) {
+@media (width <= 768px) and (width > 417px) {
+
+    body {
+        width: 100%;
+    }
 
     .rec {
         top: 21px;
@@ -367,7 +371,7 @@
     }
 }
 
-@media (width <= 375px) {
+@media (width = 375px ) and (width <= 417px) {
 
     .header {
         grid-template-rows: auto 1fr auto;
