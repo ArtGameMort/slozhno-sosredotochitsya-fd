@@ -10,7 +10,7 @@
     --card-text-auto: #353430;
     --text-color-dark: #353430;
     --head-text-auto: #353430;
-    --border-hover: rgb(50, 49, 45);
+    --border-hover: #353430;
     --bg-color: #fff1f7;
     --display: none
 }
@@ -23,7 +23,7 @@
         --card-text-auto: #353430;
         --text-color-dark: #353430;
         --head-text-auto: #353430;
-        --border-hover: rgb(50, 49, 45);
+        --border-hover: #353430;
         --bg-color: #fff1f7;
         --display: none
     }
