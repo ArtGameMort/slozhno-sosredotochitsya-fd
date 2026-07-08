@@ -14,11 +14,10 @@
     width: 100%;
     max-width: 1024px;
     display: grid;
-    grid-template-rows: 1fr min-content 1fr;
-    justify-content: flex-end;
-    align-items: center;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-self: center;
+    align-self: center;
     height: 100vh;
-    padding: 20px;
 }
 
 .rec {
@@ -70,6 +69,10 @@
     height: 25px;
 }
 
+.header__theme-menu {
+    padding-top: 17px;
+}
+
 .header__theme-menu-list {
     display: grid;
     grid-auto-flow: column;
@@ -116,13 +119,15 @@
     align-self: center;
     justify-self: start;
     max-width: 100%;
-    margin-left: -20px;
 }
 
 .header__description {
     justify-self: end;
+    align-self: start;
     max-width: 491px;
     width: 100%;
+    margin-right: 19px;
+    margin-top: 51px;
 }
 
 .title-decor {
@@ -299,15 +304,25 @@
     }
 
     .header__theme-menu {
+        padding-top: 188px;
         justify-self: end;
+        padding-right: 20px;
+        display: grid;
     }
 
     .header__theme-menu-list {
         grid-auto-flow: row;
     }
 
+    .header {
+        min-height: auto;
+        height: auto;
+        gap: 51px;
+    }
+
     .header-text {
         justify-self: start;
+        margin-top: 67px;
     }
 
     .header__description {
@@ -316,7 +331,7 @@
     }
 
     .head-card-text {
-        max-inline-size: 50%;
+        max-inline-size: 236px;
         inline-size: 100%;
     }
 
