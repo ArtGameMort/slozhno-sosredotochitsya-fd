@@ -165,8 +165,6 @@
 .card {
     display: grid;
     gap: 10px;
-    max-inline-size: 649px;
-    inline-size: 100%;
 }
 
 .card-text {
@@ -432,10 +430,6 @@
     .head-card-text {
         max-inline-size: 355px;
         inline-size: 100%;
-    }
-
-    .card {
-        grid-column: 1 / -1;
     }
 
     .text-pictures {
