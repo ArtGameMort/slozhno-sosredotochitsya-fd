@@ -289,7 +289,7 @@
     }
 
     .decorated-zone::after {
-        bottom: -44px;
+        bottom: 19px;
         left: 20px;
     }
 
@@ -322,10 +322,6 @@
         inline-size: 100%;
     }
 
-    .text-focus {
-        padding-top: 63px;
-    }
-
     .card {
         gap: 10px;
     }
@@ -337,21 +333,12 @@
     }
 
     .text-concentration {
-        margin-top: 83px;
         grid-template-columns: 1fr;
     }
 
     .concentrate {
         max-inline-size: 728px;
         inline-size: 100%;
-    }
-
-    .text-advice {
-        margin-top: 80px;
-    }
-
-    .text-pictures {
-        margin-top: 77px;
     }
 
     .footer {
