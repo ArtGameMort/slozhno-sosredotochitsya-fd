@@ -10,7 +10,6 @@
 }
 
 .header {
-    min-height: 768px;
     width: 100%;
     max-width: 1024px;
     display: grid;
@@ -203,6 +202,7 @@
 
 .text-advice {
     margin-top: 80px;
+    grid-template-columns: auto 1fr;
 }
 
 .five_advice {
@@ -215,6 +215,7 @@
 
 .text-pictures {
     margin-top: 80px;
+    grid-template-columns: repeat(3, 1fr);
 }
 
 .text-head-picture {
