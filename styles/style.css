@@ -352,12 +352,13 @@
         grid-template-rows: auto 1fr auto;
         min-height: auto;
         height: auto;
-        gap: 58px;
+        gap: 60px;
         padding: 0 10px;
     }
 
     .header-text {
         font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+        padding-left: 10px;
     }
 
     .header__description {
