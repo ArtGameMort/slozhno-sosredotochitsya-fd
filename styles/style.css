@@ -352,7 +352,7 @@
         grid-template-rows: auto 1fr auto;
         min-height: auto;
         height: auto;
-        gap: 60px;
+        gap: 58px;
         padding: 10px;
     }
 
@@ -376,7 +376,7 @@
     }
 
     .main {
-        padding: 80px 10px 0 10px;
+        padding: 70px 10px 0 10px;
 
     }
 
