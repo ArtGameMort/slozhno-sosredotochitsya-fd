@@ -362,17 +362,12 @@
     }
 
     .header__description {
-        padding: 0 10px;
-        margin: 0;
         justify-self: center;
     }
 
     .header__theme-menu {
         padding-top: 75px;
-        padding-right: 10px;
         justify-self: end;
-        display: grid;
-        gap: 10px;
     }
 
     .header__theme-menu-list {
