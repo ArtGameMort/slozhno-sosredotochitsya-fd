@@ -353,6 +353,7 @@
         min-height: auto;
         height: auto;
         gap: 56px;
+        padding: 0 10px;
     }
 
     .header-text {
