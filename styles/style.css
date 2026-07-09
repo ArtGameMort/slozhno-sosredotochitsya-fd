@@ -10,7 +10,6 @@
 }
 
 .header {
-    min-height: 768px;
     width: 100%;
     max-width: 1024px;
     display: grid;
@@ -349,11 +348,9 @@
 @media (width <= 375px) {
 
     .header {
-        grid-template-rows: auto 1fr auto;
-        min-height: auto;
-        height: auto;
-        gap: 62px;
+        grid-template-rows: min-content min-content min-content;
         padding: 0 10px;
+        height: 50vh;
     }
 
     .header-text {
@@ -375,7 +372,7 @@
     }
 
     .main {
-        padding: 78px 10px 0 10px;
+        padding: 40px 10px 0 10px;
 
     }
 
