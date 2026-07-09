@@ -333,8 +333,16 @@
         inline-size: 100%;
     }
 
+    .text-focus {
+        grid-template-columns: auto;
+    }
+
     .text-concentration {
         grid-template-columns: 1fr;
+    }
+
+    .text-advice {
+        margin-top: 82px;
     }
 
     .concentrate {
