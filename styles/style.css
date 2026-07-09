@@ -352,7 +352,7 @@
         grid-template-rows: auto 1fr auto;
         min-height: auto;
         height: auto;
-        gap: 56px;
+        gap: 60px;
         padding: 10px;
     }
 
@@ -366,7 +366,7 @@
     }
 
     .header__theme-menu {
-        padding-top: 70px;
+        padding-top: 65px;
         justify-self: end;
     }
 
