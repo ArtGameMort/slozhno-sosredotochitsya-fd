@@ -327,7 +327,6 @@
     .text-advice .card {
         max-inline-size: 472px;
         inline-size: 100%;
-        grid-column: auto;
     }
 
     .text-focus {
@@ -404,7 +403,7 @@
 
     .text-focus .card,
     .text-advice .card {
-        grid-column: 1;
+        grid-column: auto;
     }
 
     .head-card-text {
@@ -425,6 +424,9 @@
     .text-pictures img {
         grid-column: auto;
         grid-row: auto;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 
     .footer {
