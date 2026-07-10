@@ -202,7 +202,6 @@
 
 .text-advice {
     margin-top: 80px;
-    grid-template-columns: auto 1fr;
 }
 
 .five_advice {
@@ -269,11 +268,7 @@
     line-height: 82.5px;
 }
 
-@media (width <= 768px) and (width > 375px) {
-
-    body {
-        width: 100%;
-    }
+@media (width <= 768px) {
 
     .rec {
         top: 21px;
@@ -315,8 +310,8 @@
     }
 
     .header__description {
-        max-inline-size: 50%;
-        inline-size: 100%;
+        max-width: 50%;
+        width: 100%;
     }
 
     .head-card-text {
@@ -332,6 +327,7 @@
     .text-advice .card {
         max-inline-size: 472px;
         inline-size: 100%;
+        grid-column: auto;
     }
 
     .text-focus {
@@ -374,6 +370,8 @@
 
     .header__description {
         justify-self: center;
+        width: 100%;
+        max-width: 100%;
     }
 
     .header__theme-menu {
